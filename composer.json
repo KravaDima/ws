@@ -1,0 +1,29 @@
+{
+  "name": "kravadima/ws",
+  "description": "PHP SDK window sticker report",
+  "type": "library",
+  "require": {
+    "php": ">=7.1",
+    "guzzlehttp/guzzle": "^6"
+  },
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Dmytro Kravchenko",
+      "email": "kravadima@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "WS\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "WS\\Providers\\WSReportServiceProvider"
+      ]
+    }
+  }
+}
